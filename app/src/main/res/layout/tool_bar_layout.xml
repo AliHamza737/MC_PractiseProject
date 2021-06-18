@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_color"
+    android:padding="8dp"
+    android:id="@+id/toolbar">
+
+    <ImageView
+        android:id="@+id/hamburgaer"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:layout_height="30dp"
+        android:src="@drawable/hamburger_icon"
+        android:foregroundGravity="center"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/toolbartitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/back_icon"
+        android:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/notification_last"
+        android:tint="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activiteis.Registraion_Activity"
+    android:background="@drawable/pro">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorColor="@color/blue"
+            app:indicatorName="BallClipRotateIndicator" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                    <EditText
+                        android:id="@+id/userFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:hint="First Name"
+                        android:inputType="textCapWords"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_corners"/>
+
+                    <EditText
+                        android:id="@+id/userLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:hint=" Last Name"
+                        android:inputType="textCapWords"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_corners"/>
+
+
+            </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userName"
+                    android:inputType="textCapWords"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_corners"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/userPhoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userphoneno"
+                    android:inputType="phone"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_corners" />
+
+
+
+
+                <EditText
+                    android:id="@+id/userCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="textCapWords"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_corners" />
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/rounded_corners">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="15dp"
+                    android:checked="true"
+                    android:layout_margin="1dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="15dp"
+                    android:layout_margin="1dp"/>
+
+            </RadioGroup>
+
+                <Button
+                    android:id="@+id/userSaveData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userdata"
+                    android:inputType="textCapWords"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_corners" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

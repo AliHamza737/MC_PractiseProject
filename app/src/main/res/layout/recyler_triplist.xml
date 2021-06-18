@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recyleitemname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+
+                    android:text="Muzamal" />
+
+                <TextView
+                    android:id="@+id/recyletripdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12-12-2018" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recylertripexpence"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="item" />
+
+
+        </LinearLayout>
+</LinearLayout>

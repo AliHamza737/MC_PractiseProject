@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            />
+
+
+        <EditText
+            android:id="@+id/tripname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/trip_icon"
+            android:hint=" Trip Name"
+            android:inputType="textCapWords"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/start_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/location_icon"
+            android:hint="Start Location"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            tools:ignore="NewApi" />
+
+
+        <TextView
+            android:id="@+id/end_loction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/location_icon"
+            android:hint="Destination Location "
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            tools:ignore="NewApi" />
+
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/ic_dates"
+            android:hint="Start Date"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            tools:ignore="NewApi" />
+
+        <TextView
+            android:id="@+id/end_dete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/ic_dates"
+            android:hint="End Date"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            tools:ignore="NewApi" />
+        <EditText
+            android:id="@+id/expences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:hint="Expences"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            tools:ignore="NewApi" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            />
+
+        <Button
+            android:id="@+id/input_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rounded_corners"
+            android:padding="12dp"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>

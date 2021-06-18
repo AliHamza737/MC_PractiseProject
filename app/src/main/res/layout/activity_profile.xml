@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/pro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/avatar" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/profile_imageview"
+                android:layout_alignEnd="@id/profile_imageview"
+                android:layout_alignRight="@id/profile_imageview"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="-20dp"
+                android:layout_marginRight="-20dp"
+                android:onClick="clickRegisterLayout"
+                app:fabSize="normal" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id="@+id/profieFirstName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:padding="5dp"
+                android:background="@drawable/rounded_corners" />
+
+
+            <EditText
+                android:id="@+id/prfileLastName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint=" Last Name"
+                android:inputType="textCapWords"
+                android:padding="5dp"
+                android:background="@drawable/rounded_corners" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/profileUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/userName"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"/>
+
+
+        <EditText
+            android:id="@+id/profilephoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/userphoneno"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"/>
+
+
+        <EditText
+            android:id="@+id/profieEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"/>
+
+
+        <Button
+            android:id="@+id/profileUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/profileUpdate"
+            android:inputType="textCapWords"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

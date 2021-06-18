@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:tools="http://schemas.android.com/tools"-->
+            <!--android:id="@+id/map"-->
+            <!--android:layout_weight="1"-->
+            <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<com.google.android.gms.maps.MapView-->
+            <!--android:id="@+id/mapview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/download"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:alpha="0.5"
+                android:background="@drawable/rounded_corners"
+                android:hint="Trip Name"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/start_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="Start Location"
+                    android:textColor="@color/black"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/end_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="End Location"
+                    android:textColor="@color/black"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="Start Date"
+                    android:textColor="@color/black"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="End Date"
+                    android:textColor="@color/black"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/expences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="Expences"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:alpha="0.5"
+                android:padding="5dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

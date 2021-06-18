@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activiteis.AcceptInviteActivity">
+
+
+    <TextView
+        android:id="@+id/trip_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Trip ID"
+        android:inputType="textCapWords"
+        android:padding="5dp"
+        android:selectAllOnFocus="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/noThanks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/gray_tab"
+            android:padding="12dp"
+            android:text="No Thanks"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/acceptInvite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/gray_tab"
+            android:padding="12dp"
+            android:text="Accept Invite"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

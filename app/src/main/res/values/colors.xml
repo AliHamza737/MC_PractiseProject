@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#004ba0</color>
+    <color name="colorAccent">#505E82</color>
+    <color name="blue">#404dff</color>
+    <color name="black">#0e0d0d</color>
+    <color name="white">#ffffff</color>
+    <color name="tab_background">#e8e8e8</color>
+
+    <color name="tab_bg">#0e0d0d</color>
+    <color name="gray">#e3e4e3</color>
+    <color name="app_color">#1976d2</color>
+    <color name="app_color_light">#63a4ff</color>
+    <color name="app_datkBlue">#FF0E18E6</color>
+    <color name="gray_tab">#c5c6c9</color>
+    <color name="colorRouteLine">@color/colorAccent</color>
+    <color name="colorRouteLine1">#12a410</color>
+</resources>
